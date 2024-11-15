@@ -82,6 +82,10 @@ Data Visualization :
 
 Amazon QuickSight is used to create interactive dashboards that visualize key metrics, trends, and insights from the YouTube video data.
 
+You can view the data visualization created in Amazon QuickSight here:
+
+[ View YouTube Analytics Visualization PDF](Youtube_Analytics_Viz.pdf)
+
 # Future Enhancements
 Automate end-to-end workflows using AWS Lambda triggers.
 Incorporate additional datasets to expand insights.
