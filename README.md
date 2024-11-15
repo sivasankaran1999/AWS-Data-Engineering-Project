@@ -8,6 +8,7 @@ This project processes and analyzes raw YouTube video data to understand what ma
 The primary goal of this project is to analyze the factors that contribute to a YouTube video becoming trending and leverage this information for business insights, such as targeted advertising.
 
 Data Ingestion: Build a mechanism to ingest data from multiple sources.
+
 ETL System: Transform raw data into a structured format suitable for analysis.
 Data Lake: Centralize data storage from various sources in a single repository.
 Scalability: Ensure the system is scalable to handle increasing data volumes.
