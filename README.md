@@ -7,20 +7,21 @@ This project processes and analyzes raw YouTube video data to understand what ma
 
 The primary goal of this project is to analyze the factors that contribute to a YouTube video becoming trending and leverage this information for business insights, such as targeted advertising.
 
-Data Ingestion: Build a mechanism to ingest data from different sources.
-ETL System: Transform raw data into a proper format for analysis.
-Data Lake: Centralize data storage from multiple sources.
-Scalability: Ensure the system scales as data volume increases.
-Cloud Integration: Use AWS to process large-scale data efficiently.
-Reporting: Create dashboards to gain insights from the data.
+Data Ingestion: Build a mechanism to ingest data from multiple sources.
+ETL System: Transform raw data into a structured format suitable for analysis.
+Data Lake: Centralize data storage from various sources in a single repository.
+Scalability: Ensure the system is scalable to handle increasing data volumes.
+Cloud Integration: Leverage AWS services to process and manage large-scale data efficiently.
+Reporting: Create interactive dashboards to extract actionable insights from the data.
+
 
 # Services Used
-Amazon S3: Scalable object storage for data availability and performance.
-AWS IAM: Identity and access management to securely control access to AWS services.
-AWS Glue: Serverless data integration for discovering, preparing, and combining data.
-AWS Lambda: Compute service to preprocess and clean data without managing servers.
-AWS Athena: Interactive query service to analyze data directly from S3.
-Amazon QuickSight: Business intelligence service for visualizing and analyzing data.
+Amazon S3: Scalable object storage service for data availability and high performance.
+AWS IAM: Identity and access management to securely control access to AWS resources.
+AWS Glue: Serverless data integration service that helps discover, prepare, and combine data for analytics.
+AWS Lambda: Compute service that runs code in response to events without managing servers, used here for data preprocessing.
+AWS Athena: Interactive query service for analyzing data directly from S3 using SQL.
+Amazon QuickSight: Business intelligence service to visualize and analyze data for decision-making.
 
 # Dataset Used
 Today's dataset is the Top Trending Videos Dataset available on Kaggle. YouTube uses various factors, including user interaction, views, shares, comments, and likes, to determine which videos become trending. This dataset provides insights into what makes a video trend, allowing us to leverage this information for future use cases, such as building advertisements around popular video categories.
