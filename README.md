@@ -37,7 +37,6 @@ Data Pipeline Overview
 This project processes and analyzes raw YouTube video data, transforming it into a structured format for better insights. The pipeline uses a range of AWS services to ingest, clean, transform, and analyze the data, which is then visualized through interactive dashboards.
 
 1. Data Ingestion and Storage
-
 The raw data, including CSV and JSON files, is uploaded to Amazon S3 for centralized storage.
 
 2. Data Cataloging
