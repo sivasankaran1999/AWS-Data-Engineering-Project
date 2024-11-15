@@ -28,6 +28,9 @@ Video Details: Title, channel, publication time, tags, description, etc.
 Engagement Metrics: Views, likes, dislikes, and comment counts.
 Category Information: Region-specific category_id in JSON format.
 
+# Architecture Diagram
+/Users/sivasankaranrajasekaran/Desktop/DEP/architecture.jpeg
+
 # Workflow Summary
 Data Storage:
 Upload raw data (CSV and JSON) to S3 in separate folders.
