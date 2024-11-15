@@ -10,18 +10,27 @@ The primary goal of this project is to analyze the factors that contribute to a 
 Data Ingestion: Build a mechanism to ingest data from multiple sources.
 
 ETL System: Transform raw data into a structured format suitable for analysis.
+
 Data Lake: Centralize data storage from various sources in a single repository.
+
 Scalability: Ensure the system is scalable to handle increasing data volumes.
+
 Cloud Integration: Leverage AWS services to process and manage large-scale data efficiently.
+
 Reporting: Create interactive dashboards to extract actionable insights from the data.
 
 
 # Services Used
 Amazon S3: Scalable object storage service for data availability and high performance.
+
 AWS IAM: Identity and access management to securely control access to AWS resources.
+
 AWS Glue: Serverless data integration service that helps discover, prepare, and combine data for analytics.
+
 AWS Lambda: Compute service that runs code in response to events without managing servers, used here for data preprocessing.
+
 AWS Athena: Interactive query service for analyzing data directly from S3 using SQL.
+
 Amazon QuickSight: Business intelligence service to visualize and analyze data for decision-making.
 
 # Dataset Used
