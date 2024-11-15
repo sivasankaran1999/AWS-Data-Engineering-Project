@@ -32,22 +32,45 @@ Category Information: Region-specific category_id in JSON format.
 ![Architecture Diagram](./architecture.jpeg)
 
 # Workflow Summary
+Data Pipeline Overview
+This project involves processing, transforming, and analyzing data from raw CSV and JSON formats using AWS services. The pipeline is designed to ingest, clean, transform, and analyze YouTube video data, ultimately visualizing it through interactive dashboards.
+
+1. Data Storage
+Upload Raw Data: Store raw data files (CSV and JSON) in separate folders within an Amazon S3 bucket.
+Folder Structure:
+/raw_data/csv/
+/raw_data/json/
+2. Data Cataloging
+AWS Glue Crawlers: Use AWS Glue to create data catalogs for the raw CSV and JSON data.
+Crawling Process: AWS Glue will automatically scan the data files in the S3 buckets to infer the schema and create metadata tables.
+Output: These tables can be accessed by services like Athena for querying.
+3. Data Cleaning
+AWS Lambda for JSON Data Processing:
+
+Process the raw JSON data in AWS Lambda functions to extract relevant data and reformat it into a more structured format (Parquet).
+Output: Store the cleaned JSON data as Parquet files in a separate S3 bucket for efficient querying.
+Lambda Role: Ensure proper IAM roles and permissions are set up to allow AWS Lambda to access the data in the S3 bucket.
 Data Storage:
-Upload raw data (CSV and JSON) to S3 in separate folders.
-Data Cataloging:
-Use AWS Glue crawlers to create data catalogs for the raw data.
-Data Cleaning:
-Process JSON data using AWS Lambda to extract and reformat it into Parquet files.
-Store cleaned data in a separate S3 bucket.
-Data Transformation:
-Convert CSV files to Parquet using AWS Glue ETL.
-Ensure data consistency by updating schemas and handling regional variations.
-Data Analysis:
-Query data using AWS Athena.
-Combine datasets (e.g., cleaned JSON with CSV) for analysis.
-Visualization:
-Create interactive dashboards in Amazon QuickSight to analyze and interpret results.
-Future Enhancements
+
+Cleaned data is stored in the /cleaned_data/json/ folder in S3.
+4. Data Transformation
+AWS Glue ETL for CSV Data:
+
+Use AWS Glue to extract, transform, and load (ETL) the raw CSV files from S3 into Parquet format for better performance and storage optimization.
+Schema Management: Update the schema of the CSV files during the transformation process to ensure consistency across the data.
+Handle Regional Variations: Address any regional variations in the data (e.g., language or regional identifiers) during the ETL process.
+Output: Store the transformed Parquet files in a dedicated S3 bucket (e.g., /transformed_data/csv/).
+
+5. Data Analysis
+Query Data with AWS Athena:
+Use AWS Athena to run SQL queries on the cleaned and transformed Parquet data stored in S3.
+Combine datasets, such as the cleaned JSON data with the CSV data, for comprehensive analysis.
+6. Data Visualization
+Amazon QuickSight:
+Create interactive dashboards to analyze the data and generate insights.
+Visualizations will help answer key business questions related to video trends, engagement metrics, and performance across regions.
+
+# Future Enhancements
 Automate end-to-end workflows using AWS Lambda triggers.
 Incorporate additional datasets to expand insights.
 Optimize data processing pipelines for real-time analytics.
