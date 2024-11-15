@@ -29,7 +29,7 @@ Engagement Metrics: Views, likes, dislikes, and comment counts.
 Category Information: Region-specific category_id in JSON format.
 
 # Architecture Diagram
-![Architecture Diagram](./architecture-diagram.png)
+![Architecture Diagram](./architecture.jpeg)
 
 # Workflow Summary
 Data Storage:
