@@ -86,6 +86,8 @@ You can view the data visualization created in Amazon QuickSight here:
 
 [ View YouTube Analytics Visualization PDF](Youtube_Analytics_Viz.pdf)
 
+![YouTube Analytics Visualization](Youtube_Analytics_Viz.png)
+
 # Future Enhancements
 Automate end-to-end workflows using AWS Lambda triggers.
 Incorporate additional datasets to expand insights.
