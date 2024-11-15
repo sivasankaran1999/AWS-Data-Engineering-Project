@@ -21,6 +21,8 @@ Amazon QuickSight: Business intelligence service for visualizing and analyzing d
 # Dataset Used
 This dataset, sourced from Kaggle, contains statistics on daily trending YouTube videos for multiple regions.
 
+https://www.kaggle.com/datasets/datasnaek/youtube-new
+
 Features of the Dataset
 Video Details: Title, channel, publication time, tags, description, etc.
 Engagement Metrics: Views, likes, dislikes, and comment counts.
