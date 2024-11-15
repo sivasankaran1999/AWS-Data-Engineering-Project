@@ -51,12 +51,17 @@ Category Information: Region-specific category_id in JSON format.
 Data Pipeline Overview
 This project processes and analyzes raw YouTube video data, transforming it into a structured format for better insights. The pipeline uses a range of AWS services to ingest, clean, transform, and analyze the data, which is then visualized through interactive dashboards.
 
-1. Data Ingestion and Storage : The raw data, including CSV and JSON files, is uploaded to Amazon S3 for centralized storage.
-2. Data Cataloging : AWS Glue crawlers are used to scan and create metadata tables for the raw data, enabling easy access and management of the data in AWS.
-3. Data Cleaning : AWS Lambda functions process the raw JSON data, extracting key information and reformatting it into the Parquet format, which is more optimized for querying and analysis. The cleaned data is stored separately in S3 for further processing.
-4. Data Transformation : AWS Glue ETL is used to transform the CSV data into Parquet format, ensuring that the data is consistently structured and optimized for analytics.
-5. Data Analysis : AWS Athena is used to run SQL queries on the cleaned and transformed data to perform comprehensive analysis. The data is joined and analyzed to uncover valuable insights.
-6. Data Visualization : Amazon QuickSight is used to create interactive dashboards that visualize key metrics, trends, and insights from the YouTube video data.
+Data Ingestion and Storage : The raw data, including CSV and JSON files, is uploaded to Amazon S3 for centralized storage.
+
+Data Cataloging : AWS Glue crawlers are used to scan and create metadata tables for the raw data, enabling easy access and management of the data in AWS.
+
+Data Cleaning : AWS Lambda functions process the raw JSON data, extracting key information and reformatting it into the Parquet format, which is more optimized for querying and analysis. The cleaned data is stored separately in S3 for further processing.
+
+Data Transformation : AWS Glue ETL is used to transform the CSV data into Parquet format, ensuring that the data is consistently structured and optimized for analytics.
+
+Data Analysis : AWS Athena is used to run SQL queries on the cleaned and transformed data to perform comprehensive analysis. The data is joined and analyzed to uncover valuable insights.
+
+Data Visualization : Amazon QuickSight is used to create interactive dashboards that visualize key metrics, trends, and insights from the YouTube video data.
 
 # Future Enhancements
 Automate end-to-end workflows using AWS Lambda triggers.
