@@ -5,6 +5,8 @@ This project processes and analyzes raw YouTube video data to understand what ma
 
 # Project Goals
 
+## <span style="color:blue;">Project Goals</span>
+
 The primary goal of this project is to analyze the factors that contribute to a YouTube video becoming trending and leverage this information for business insights, such as targeted advertising.
 
 Data Ingestion: Build a mechanism to ingest data from multiple sources.
