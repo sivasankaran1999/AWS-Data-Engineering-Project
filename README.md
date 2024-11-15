@@ -33,11 +33,13 @@ Category Information: Region-specific category_id in JSON format.
 
 # Workflow Summary
 
-# Data Pipeline Overview
+Data Pipeline Overview
 This project processes and analyzes raw YouTube video data, transforming it into a structured format for better insights. The pipeline uses a range of AWS services to ingest, clean, transform, and analyze the data, which is then visualized through interactive dashboards.
 
 1. Data Ingestion and Storage
+
 The raw data, including CSV and JSON files, is uploaded to Amazon S3 for centralized storage.
+
 2. Data Cataloging
 AWS Glue crawlers are used to scan and create metadata tables for the raw data, enabling easy access and management of the data in AWS.
 3. Data Cleaning
