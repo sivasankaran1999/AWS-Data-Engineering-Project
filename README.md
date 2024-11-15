@@ -1,6 +1,6 @@
 # YouTube Data Engineering Project
 Overview
-This project aims to securely manage, streamline, and perform analysis on structured and semi-structured YouTube videos data based on video categories and trending metrics.
+This project processes and analyzes raw YouTube video data to understand what makes a video trending. By analyzing the top trending videos, we aim to identify key factors, such as user interaction, views, shares, comments, and likes, which contribute to a video's popularity. Additionally, this analysis will help us build targeted advertising strategies around trending categories.
 
 # Project Goals
 Data Ingestion: Build a mechanism to ingest data from different sources.
@@ -19,7 +19,7 @@ AWS Athena: Interactive query service to analyze data directly from S3.
 Amazon QuickSight: Business intelligence service for visualizing and analyzing data.
 
 # Dataset Used
-This dataset, sourced from Kaggle, contains statistics on daily trending YouTube videos for multiple regions.
+Today's dataset is the Top Trending Videos Dataset available on Kaggle. YouTube uses various factors, including user interaction, views, shares, comments, and likes, to determine which videos become trending. This dataset provides insights into what makes a video trend, allowing us to leverage this information for future use cases, such as building advertisements around popular video categories.
 
 https://www.kaggle.com/datasets/datasnaek/youtube-new
 
