@@ -4,6 +4,9 @@ Overview :
 This project processes and analyzes raw YouTube video data to understand what makes a video trending. By analyzing the top trending videos, we aim to identify key factors, such as user interaction, views, shares, comments, and likes, which contribute to a video's popularity. Additionally, this analysis will help us build targeted advertising strategies around trending categories.
 
 # Project Goals
+
+The primary goal of this project is to analyze the factors that contribute to a YouTube video becoming trending and leverage this information for business insights, such as targeted advertising.
+
 Data Ingestion: Build a mechanism to ingest data from different sources.
 ETL System: Transform raw data into a proper format for analysis.
 Data Lake: Centralize data storage from multiple sources.
